@@ -17,7 +17,7 @@ As the name suggests, this is the backend server created with node.js and expres
 Installation of [node.js](https://nodejs.org/en/) is required to run the server. 
 Additionally, use the node package manager "npm" to install libraries and required components.
 
-After cloning the repository, in the directory path on the command line perform the following strp to instrall node_modules and all the libraries at once.
+After cloning the repository, in the directory path on the command line, perform
 ```bash
 npm install
 ```
