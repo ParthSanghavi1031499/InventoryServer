@@ -5,7 +5,8 @@ const itemSchema = new Schema({
     
     itemCode:{
         type: String,
-        required: true
+        required: true,
+        unique: true
     }, // Unique identifier of an item to avoid duplicate
     
     itemName: {

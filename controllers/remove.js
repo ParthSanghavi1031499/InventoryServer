@@ -16,14 +16,14 @@ exports.removeItem = ( req, res, next ) => {
         })
     }
 
-    let itemId = req.params.itemId
+    let itemCode = req.params.itemCode
     let {shouldDeleted, deletedComment} = requestBody
     let updateDetails = {
         isDeleted: shouldDeleted,
         deletedComment: shouldDeleted?deletedComment:""
     }
 
-    Items.findByIdAndUpdate( itemId,
+    Items.findOneAndUpdate( {itemCode},
     {
         $set: updateDetails,
     },
@@ -42,8 +42,7 @@ exports.removeItem = ( req, res, next ) => {
         res.statusCode = 500
         res.json({
             success : false,
-            errorMessage : err,
-            message: `Sorry, the item could not be processed! Please try again in some time.`,
+            message: err!={}?`Sorry, item not found in the database.`:err,
         })
     })
 }

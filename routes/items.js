@@ -10,7 +10,7 @@ itemsRouter.route('/')
 .get(fetch.fetchInventory)
 .post(create.createInventory)
 
-itemsRouter.route('/:itemId')
+itemsRouter.route('/:itemCode')
 .put(edit.editInventory)
 .delete(remove.removeItem)
 
