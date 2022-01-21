@@ -16,6 +16,10 @@ As the name suggests, this is the backend server created with node.js and expres
 ```bash
 https://shopify-inventory-frontend.herokuapp.com/
 ```
+##Live hosted Server
+```bash
+https://shopify-inventory-server.herokuapp.com/
+``` 
 
 ## Installation
 Installation of [node.js](https://nodejs.org/en/) is required to run the server. 
