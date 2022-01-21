@@ -12,6 +12,10 @@ As the name suggests, this is the backend server created with node.js and expres
 2.  Required additional feature:
     - When deleting, adding deletion comments and undo deletion of an item is possible.
 
+## [Live Demo Playground](https://shopify-inventory-frontend.herokuapp.com/)
+```bash
+https://shopify-inventory-frontend.herokuapp.com/
+```
 
 ## Installation
 Installation of [node.js](https://nodejs.org/en/) is required to run the server. 
